@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="/images/nature-logo.svg" alt="logo" class="logo">
+        <nav class="container row">
+            <img src="/images/Image.png" alt="logo" class="logo">
             <ul class="nav-links">
-                <li class="link-item">About</li>
-                <li class="link-item">Camping</li>
-                <li class="link-item">Hiking</li>
+                <li class="link-item"><a href="#" class="nav__link">About</a></li>
+                <li class="link-item"><a href="#" class="nav__link">Camping</a></li>
+                <li class="link-item"><a href="#" class="nav__link">Hiking</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <div class="hero">
-            <div class="left-content">
-                <h1 class="title">Mountains are awesome</h1>
+    <section class="hero">
+        <div class="container row space">
+            <div class="hero-content">
+                <h1 class="hero-title">Mountains are awesome</h1>
                 <p class="hero-text">Whether you prefer hiking or simply camping, mountains are the best place to practice the art of natural living and enjoy the majestic beauty and vastness of these silent giants</p>
                 <button class="hero-btn">Sign up</button>
             </div>
-            <div class="right-content">
-                <img src="/images/Misty-mountain-at-sundown.jpg" alt="Misty mountain at sunset" class="hero-img">
+            <div class="hero-img">
+                <img src="/images/Misty-mountain-at-sundown.jpg" alt="Misty mountain at sunset" class="img-hero">
             </div>
         </div>
-        <div class="content">
+    </section>
+    <main class="content"> 
+        <div class="container row space">
             <h2 class="content-title">Various mountain activities to enjoy</h2>
             <div>
                 <div class="box">
@@ -48,17 +54,21 @@
                 </div>
             </div>
         </div>
-        <div class="quote">
+    </main>
+    <section class="quote">
+        <div class="container row space">
             <blockquote>“He who climbs upon the highest mountains laughs at all tragedies, real or imaginary.” – Friedrich Nietzsche</blockquote>
         </div>
-        <div>
-            <div class="cta">
-                <h3 class="cta-title">Visit a mountain! It's time!</h3>
-                <p class="cta-text">Sign up for our weekly mountain tours by clicking that button right over there!</p>
-                <button class="cta-btn">Sign up</button>
-            </div>
+    </section>
+    <section class="cta">
+        <div class="container row space">
+            <h3 class="cta-title">Visit a mountain! It's time!</h3>
+            <p class="cta-text">Sign up for our weekly mountain tours by clicking that button right over there!</p>
+            <button class="cta-btn">Sign up</button>
         </div>
-    </main>
-    <footer></footer>
+    </section>
+    <footer>
+        <div class="container row"></div>
+    </footer>
 </body>
 </html>
